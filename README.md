@@ -24,3 +24,4 @@ apt-get install -y x11-apps
 `sudo docker run -it --net=host -e DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix/ my_xeyes_image`
 
 ## Xhost xeyes with Devcontainer
+# NOT WORKING. No idea why not :(
