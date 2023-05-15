@@ -3,11 +3,6 @@
     "dockerFile": "Dockerfile",
     "runArgs": [
         "--net=host",
-        "-e", "DISPLAY",
         "-v", "/tmp/.X11-unix/:/tmp/.X11-unix/"
     ],
-    "settings": { 
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
-    "extensions": []
 }
