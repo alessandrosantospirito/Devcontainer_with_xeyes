@@ -2,7 +2,8 @@
     "name": "Xhost eyes",
     "dockerFile": "Dockerfile",
     "runArgs": [
-        "--net=host",
-        "-v", "/tmp/.X11-unix/:/tmp/.X11-unix/"
-    ],
+        "--net", "host", 
+        "-e", "DISPLAY=${env:DISPLAY}",
+        "-v", "/tmp/.X11-unix:/tmp/.X11-unix"
+    ]
 }
